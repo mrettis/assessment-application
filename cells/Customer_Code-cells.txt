@@ -1,0 +1,37 @@
+																			
+																			
+																			
+CUSTOMER CODE 																			
+SUBMITTED BY:  E-5  
+DATE:	M-5	            																	
+SALES PERSON:E-6																		
+																																				
+CUSTOMER BILL TO ADDRESS:	
+A-22 Company_name
+A-23 company_address_street
+A-24 Company_address, City and State
+A-25 Company_address_zipcode
+
+CUSTOMER SHIP TO ADDRESS: 	
+I-22	Company_name
+I-23 company_shipping_address_street
+I-24 company_shipping_address_City and company_shipping_address_State
+I-25 company_shipping_address_zipcode									
+																			
+																			
+																			
+							 												
+																			
+																		
+Sales Tax: (Yes/No) E-28	
+Payment Term: M-27	add form input
+Delivery Term: M-28	add form input									
+																		
+																		
+																			
+Q1, O-36																	
+																			
+Q2, O-40
+
+																	
+																			

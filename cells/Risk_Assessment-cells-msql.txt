@@ -1,0 +1,95 @@
+﻿objective:
+
+python script to fill specific cells (provided later) of 2 differnet excel documents forms templates called 'Risk_Assessment.xlsx' and 'Customer_Code.xlsx' saved on templates/ After open and close excell documents with new values from msql tables(provided later) we need to save them in a folder called 'Google_Search" /"company_name_Risk_Assessment.xlsx" and "company_name_Customer_Code.xlsx
+
+
+step 1) Lest start with Risk_Assessment.xlsx which will use values from tables: company_info, risk_assessment and trade_compliance
+
+wb = load_workbook('C:/xampp/htdocs/sales-process/python/templates/Risk_Assessment.xlsx')
+
+from table company_info fill:
+
+cell D-5 from column company_name  
+cell D-6 from columns company_address_street + company_address_city + company_address_state + company_address_zipcode (table:company_info) 
+
+
+from table risk_assessment fill: 
+
+cell D-10 from column Q1-note
+cell C-11 from column Q2, 
+cell C-12 from column Q3
+cell D-12 from column Q3-note
+cell C-13 from column Q4 
+cell D-13 from column Q4-note
+cell D-14 from column Q5-note
+cell C-15 from column Q6
+cell D-15 from column Q6-note 
+cell C-16 from column Q7
+cell D-16 from column Q7-note
+cell C-18 from column Q8
+cell D-18 from column Q8-note
+cell C-20 from column total_risk
+
+
+
+from table trade_compliance columns:
+
+cell C-28 from column Q9 
+cell C-29 from column Q10
+cell C-30 from column Q11
+cell  C-31 from column Q12
+cell C-32 from column Q13
+cell C-34 from column Q14, 
+cell C-36 from total_trade_compliance 	
+
+
+close document and save heree: file_path = fr'C:\xampp\htdocs\sales-process\python\Google_Search\{company_info[0]}_Customer_Code.xlsx'
+
+
+
+
+step 2) FOR Customer_Code.xlsx, which will use values from mysql tables: company_info and customer_code.
+
+
+																			
+																			
+																			
+from columns of table customer_code: 																			
+cell E-5 from column submitted_by  
+cell M-5 from column submission_date	            																
+cell E-6 from column submitted_by																	
+																																				
+from columns company_info	
+cell A-22 from column company_name
+cell A-23 from column company_address_street
+cell A-24 from column company_address_city and company_address_state
+cell A-25 from column Company_address_zipcode
+
+if company_address_street company_address_city and company_address_state are different from company_shipping_address_street, company_shipping_address_City and company_shipping_address_State fill cells
+
+from table company_info with columns:
+cell I-22 from column company_name
+cell I-23 from columns company_shipping_address_street
+cell I-24 from column company_shipping_address_City and company_shipping_address_State
+cell I-25 from column company_shipping_address_zipcode	
+
+if they are the values are the same, please write in 
+cell I-22 "THE SAME"							
+																			
+																		
+cell E-28 from column customer_code	
+cell M-27 from column payment_term 	
+cell M-28 from column delivery_term 									
+																		
+																		
+																			
+cell O-36 from column  Q1_code  																	
+																			
+cell O-40 from column  Q2_code
+
+close document and save as Google_Search/company_name_Customer_Code.xlsx
+																	
+																			
+
+
+

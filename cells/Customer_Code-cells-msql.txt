@@ -1,0 +1,39 @@
+																			
+																			
+																			
+from columns of table customer_code: 																			
+cell E-5 from column submitted_by  
+cell M-5 from column submission_date	            																
+cell E-6 from column submitted_by																	
+																																				
+from columns company_info	
+cell A-22 from column company_name
+cell A-23 from column company_address_street
+cell A-24 from column company_address_city and company_address_state
+cell A-25 from column Company_address_zipcode
+
+if company_address_street company_address_city and company_address_state are different from company_shipping_address_street, company_shipping_address_City and company_shipping_address_State fill cells
+
+from table company_info with columns:
+cell I-22 from column company_name
+cell I-23 from columns company_shipping_address_street
+cell I-24 from column company_shipping_address_City and company_shipping_address_State
+cell I-25 from column company_shipping_address_zipcode	
+
+if they are the values are the same, please write in 
+cell I-22 "THE SAME"							
+																			
+																		
+cell E-28 from column customer_code	
+cell M-27 from column payment_term 	
+cell M-28 from column delivery_term 									
+																		
+																		
+																			
+cell O-36 from column  Q1_code  																	
+																			
+cell O-40 from column  Q2_code
+
+close document and save as Google_Search/company_name_Customer_Code.xlsx
+																	
+																			
