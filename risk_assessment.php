@@ -196,6 +196,7 @@ require_once 'includes/header.php';
                                         rows="4" 
                                         class="small mx-auto d-block"
                                         name="Q3_note"
+                                        content="width=device-width, initial-scale=1.0"
                                         >
                                         </textarea>
    
@@ -233,6 +234,7 @@ require_once 'includes/header.php';
                                             cols="90" rows="4" 
                                             class="small mx-auto d-block"
                                             name="Q4_note"
+                                            content="width=device-width, initial-scale=1.0"
                                             >                                     
                                             </textarea>
                                     </td>
@@ -270,7 +272,7 @@ require_once 'includes/header.php';
                                         rows="4" 
                                         class="small mx-auto d-block"
                                         name="Q5_note"
-
+                                        content="width=device-width, initial-scale=1.0"
                                         >                                     
                                         </textarea>
                                     </td>
@@ -383,6 +385,7 @@ require_once 'includes/header.php';
                                         rows="4" 
                                         class="small mx-auto d-block"
                                         name="Q7_note"
+                                        content="width=device-width, initial-scale=1.0"
                                         >
                                      
                                         </textarea>
@@ -424,6 +427,7 @@ require_once 'includes/header.php';
                                         rows="4" 
                                         class="small mx-auto d-block"
                                         name="Q8_note"
+                                        content="width=device-width, initial-scale=1.0"
                                         >
                                      
                                         </textarea>

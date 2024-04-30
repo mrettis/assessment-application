@@ -57,7 +57,7 @@ def fill_risk_assessment(company_info):
 # Function to fill Customer_Code.xlsx
 def fill_customer_code(company_info):
     # Fetch data from MySQL tables
-    customer_code = fetch_data("SELECT submitted_by, submission_date, sales_tax, payment_term, delivery_term FROM customer_code")
+    customer_code = fetch_data("SELECT submitted_by, submission_date, sales_tax, payment_term, delivery_term, Q1_code, Q2_code FROM customer_code")
 
     # Load Customer_Code.xlsx template
     wb = load_workbook('C:/xampp/htdocs/sales-process/python/templates/Customer_Code.xlsx')
@@ -85,6 +85,8 @@ def fill_customer_code(company_info):
     ws['E28'] = customer_code[2]  # sales_tax
     ws['M27'] = customer_code[3]  # payment_term
     ws['M28'] = customer_code[4]  # delivery_term
+    ws['O36'] = customer_code[5]  # Q1_code
+    ws['O40'] = customer_code[6]  # Q2_code
 
     return wb
 
