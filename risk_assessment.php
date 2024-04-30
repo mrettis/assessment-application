@@ -317,6 +317,18 @@ require_once 'includes/header.php';
                                           material litigation imposed, settled, or alleged."
                                         </p>
 
+                                        <div>
+                                      <textarea 
+                                        id="" 
+                                        cols="90" 
+                                        rows="3" 
+                                        class="small mx-auto d-block"
+                                        name="Q6_note"
+                                        content="width=device-width, initial-scale=1.0">
+                                     
+                                        </textarea>
+                                      </div>
+
 
                                        
                                        

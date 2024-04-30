@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $q4_note = $_POST['Q4_note'];
     $q5_note = $_POST['Q5_note'];
     $q6 = $_POST['Q6'];
-    // $q6_note = $_POST['Q6_note'];
+    $q6_note = $_POST['Q6_note'];
     $q7 = $_POST['Q7'];
     $q7_note = $_POST['Q7_note'];
     $q8 = $_POST['Q8'];
@@ -22,11 +22,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $total_risk = $_POST['total_risk'];
 
     // Prepare an insert statement
-    $sql = "INSERT INTO risk_assessment (Q1_note, Q2, Q3, Q3_note, Q4, Q4_note, Q5_note, Q6, Q7, Q7_note, Q8, Q8_note, total_risk) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO risk_assessment (Q1_note, Q2, Q3, Q3_note, Q4, Q4_note, Q5_note, Q6, Q6_note, Q7, Q7_note, Q8, Q8_note, total_risk) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     if ($stmt = $con->prepare($sql)) {
         // Bind variables to the prepared statement as parameters
-        $stmt->bind_param("sssssssssssss", $q1_note, $q2, $q3, $q3_note, $q4, $q4_note, $q5_note, $q6, $q7, $q7_note, $q8, $q8_note, $total_risk);
+        $stmt->bind_param("ssssssssssssss", $q1_note, $q2, $q3, $q3_note, $q4, $q4_note, $q5_note, $q6, $Q6_note, $q7, $q7_note, $q8, $q8_note, $total_risk);
 
         // Attempt to execute the prepared statement
         if ($stmt->execute()) {
