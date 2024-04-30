@@ -407,7 +407,7 @@ Submit a completed ESF to Trade Compliance Officer for review and approval. Once
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Submit Button -->
-                                    <button type="submit" class="btn btn-primary">NEXT</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
                 

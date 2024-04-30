@@ -66,7 +66,7 @@ require_once 'includes/header.php';
                 console.log("Python script executed successfully");
                 console.log(response); // Output the response from the Python script
                 // Optionally, you can display a success message to the user
-                alert('Documents generated successfully-from modal!');
+                alert('Documents generated successfully!');
 
                 window.location.href = "http://localhost/sales-process/exit.php";
             },

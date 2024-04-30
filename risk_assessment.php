@@ -23,7 +23,10 @@ require_once 'includes/header.php';
     <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/site.css">
+    
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
     <script src="./functions/main.js"></script>
 
 </head>
@@ -330,12 +333,19 @@ require_once 'includes/header.php';
                                      
                                         </textarea>
                                       </div>
-
-
                                        
-                                       
+                                        <div id="changeableElement">
 
-                                        <button type="button" onclick="runPythonScript()"class="btn btn-primary float-right my-3 mr-5">SEARCH</button>
+                                        <button 
+                                        id="colorButton"
+                                        type="button"
+                                         onclick="runPythonScript()"
+                                         class="btn btn-success  text-white float-right my-3 mr-5"
+                                         >
+                                         NEWS SEARCH</button>
+
+
+                                         </div>
 
 
                                   
@@ -353,7 +363,7 @@ require_once 'includes/header.php';
                                             Point 2 for CPI score 0 - 50<br>
 
                                             <br>
-                                            <a href="https://www.transparency.org/en/cpi/2023">CPI (Corruption Perception Index) </a>
+                                            <a href="https://www.transparency.org/en/cpi/2023" target="_blank" >CPI (Corruption Perception Index) </a>
 
                                         </p>
                                     </td>                                  
@@ -479,13 +489,15 @@ require_once 'includes/header.php';
                 
                             </table>          
                             <div class="row my-5">
+
+                                <div class="col-md-6">
+                                    <!-- Submit Button -->
+                                    <!-- <button type="button" class="btn btn-primary" onclick="navigateTocompliance()">NEXT</button> -->
+                                </div>
+
                                 <div class="col-md-6">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                  
-                                </div>
-                                <div class="col-md-6">
-                                    <!-- Submit Button -->
-                                    <button type="button" class="btn btn-primary" onclick="navigateTocompliance()">NEXT</button>
                                 </div>
                             </div>
 
@@ -515,24 +527,33 @@ require_once 'includes/header.php';
     
 
 
-    function runPythonScript() {
-    $.ajax({
-        type: "GET",
-        url: "http://localhost/sales-process/search-button.php", // Call the PHP endpoint
-        success: function(response) {
-            console.log("Python script executed successfully");
-            console.log(response); // Output the response from the Python script
-        },
-        error: function(xhr, status, error) {
-            console.error("Error executing Python script");
-            console.error(xhr.responseText); // Output any error message
-        }
+//   search news buttom, -change color after press - not working-
+
+
+$(document).ready(function(){
+        $("#colorButton").click(function(){
+            // Change button color to yellow (Bootstrap's warning color) immediately after click
+            $("#colorButton").removeClass("btn-success").addClass("btn-warning");
+
+            // Make the AJAX call
+            $.ajax({
+                type: "GET",
+                url: "http://localhost/sales-process/search-button.php", // Call the PHP endpoint
+                success: function(response) {
+                    console.log("Python script executed successfully");
+                    console.log(response); // Output the response from the Python script
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error executing Python script");
+                    console.error(xhr.responseText); // Output any error message
+                }
+            });
+        });
     });
-}
 
 </script>
 
-<!-- Other HTML code -->
+
 
 
 

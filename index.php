@@ -136,15 +136,16 @@ require_once 'includes/header.php';
                 <div class="row my-5">
 
                     <div class="row my-5">
-                        <div class="col-md-6">
+       
+                    <div class="col-md-6">
+                        <!-- Next Button -->
+                        <!-- <button type="button" class="btn btn-primary" onclick="navigateToRiskAssessment()">NEXT</button> -->
+                    </div>
+
+                    <div class="col-md-6">
                             <!-- Submit Button -->
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
-                
-                    <div class="col-md-6">
-                        <!-- Next Button -->
-                        <button type="button" class="btn btn-primary" onclick="navigateToRiskAssessment()">NEXT</button>
-                    </div>
                 </div>
 
  
