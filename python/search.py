@@ -54,17 +54,17 @@ keywords = [
     'unlawful',
     'criminal',
     'civil judgment',
-#     'penalty',
-#     'lawsuit',
-#     'antitrust',
-#     'corruption',
-#     'money laundering',
-#     'terrorist financing',
-#     'breach of contract',
-#     'human rights',
-#     'material litigation imposed',
-#     'settled',
-#     'alleged'
+    'penalty',
+    'lawsuit',
+    'antitrust',
+    'corruption',
+    'money laundering',
+    'terrorist financing',
+    'breach of contract',
+    'human rights',
+    'material litigation imposed',
+    'settled',
+    'alleged'
 ]
 
 # Function to search for keywords and extract text from links
