@@ -263,7 +263,7 @@ require_once 'includes/header.php';
                                         
                                         <br><br>
 
-                                        <a href="http://w40.mc.showadenko.com/mstweb/mainservletDenial"> DPL site </a>
+                                        <a href="http://w40.mc.showadenko.com/mstweb/mainservletDenial" target="_blank"> DPL site </a>
 
                                         <br>
                                         *Refer to column E for screening instructions

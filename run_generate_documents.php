@@ -9,7 +9,7 @@ $pythonScriptPath = "./python/generate.py";
 $output = exec("python $pythonScriptPath");
 
 // Output the result
-header("Location: exit.php");
+
 
 echo $output;
 

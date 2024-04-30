@@ -1,3 +1,11 @@
+
+<?php
+// Include the database configuration file
+require_once "C:/xampp/htdocs/sales-process/includes/process_exit.php"
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
